@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>辅助跨域测试-cookie不解决</title>
+    <script src="./static/js/jquery.js"></script>
+    <script src="./static/js/jquery-cookie.js"></script>
+</head>
+<body>
+    <script>
+       $(document).ready(function(){
+           var testCookie = $.cookie('testCookie') || '未获取到'
+           alert(testCookie)
+       })
+    </script>
+</html>
