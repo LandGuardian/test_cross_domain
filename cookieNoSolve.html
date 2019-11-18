@@ -7,10 +7,12 @@
     <script src="./static/js/jquery-cookie.js"></script>
 </head>
 <body>
+   所获取cookie的字段名： <input id="testCookie" /> <button onclick="getCookie()">获取指定的cookie</button>
     <script>
-       $(document).ready(function(){
-           var testCookie = $.cookie('testCookie') || '未获取到'
+        function getCookie(){
+            var code = $('#testCookie').val() || 'testCookie'
+           var testCookie = $.cookie(code) || '未获取到'
            alert(testCookie)
-       })
+        }
     </script>
 </html>
